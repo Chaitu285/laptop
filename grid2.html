@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Layout with Columns and Rows</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: grid;
+
+      grid-template-rows: 80px 60px 1fr;    
+      gap: 20px;
+      height: 100vh;
+    }
+
+    .header {
+        color: white;
+      grid-column: 1 / 4;
+      grid-row: 1/2;
+      background-color: black;
+      
+    }
+
+    .search {
+        color: white;
+      grid-column: 1 / 3;
+      grid-row: 2/3;
+      background-color:black;
+      
+    }
+
+    .left {
+      grid-column: 1 / 2;
+      grid-row: 3/4;
+      background-color: black;
+      
+    }
+
+    .middle {
+      grid-column: 2 / 3;
+      grid-row: 3/4;
+      background-color:black;
+     
+    }
+
+    .right {
+      grid-column: 3 / 4;
+      grid-row: 2/4;
+      background-color: black;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">chaitu</div>
+    <div class="search">srikanth</div>
+    <div class="left">savanth</div>
+    <div class="middle">anirudh</div>
+    <div class="right">mounish</div>
+  </div>
+</body>
+</html>
