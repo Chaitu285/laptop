@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        fieldset{
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+           
+            
+        }
+        input::placeholder{
+            color:orange;
+
+        }
+        input{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+
+        <legend>LOGIN</legend>
+        <form>
+
+            <input type="text" name="userName" placeholder="EnterUserName">
+            <br><br>
+            <input type="password" name="userPassword" placeholder="EnterPassword">
+            <br><br>
+            <input type="submit" value="LOGIN">
+            <br><br>
+        </form>
+    </fieldset>
+</body>
+</html>
